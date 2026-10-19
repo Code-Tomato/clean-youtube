@@ -58,7 +58,7 @@ Open source (MIT): https://github.com/Code-Tomato/clean-youtube. Bug reports and
 - **Host permission (youtube.com, m.youtube.com):** The content script adds styles to YouTube pages to hide the parts the user chose, and switches YouTube's autoplay toggle off if the user asked for that.
 - **Remote code:** No. All code ships in the package.
 - **Data usage:** Collects no user data. Tick the three certifications (no selling, no unrelated use, no creditworthiness use).
-- **Privacy policy URL:** Not required when no data is collected; the GitHub repo can be used if the form insists.
+- **Privacy policy URL:** https://github.com/Code-Tomato/clean-youtube/blob/main/PRIVACY.md
 
 ## Categories
 
