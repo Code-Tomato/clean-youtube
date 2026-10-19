@@ -1,0 +1,4 @@
+*.zip
+xcuserdata/
+web-ext-artifacts/
+.DS_Store

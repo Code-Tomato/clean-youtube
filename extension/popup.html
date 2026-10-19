@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<style>
+  body { width: 290px; margin: 0; padding: 12px; font: 13px system-ui, sans-serif; background: light-dark(#fff, #0f0f0f); color: light-dark(#0f0f0f, #f1f1f1); }
+  h1 { font-size: 15px; margin: 0 0 10px; display: flex; justify-content: space-between; align-items: center; }
+  label { display: flex; align-items: center; gap: 8px; padding: 5px 0; cursor: pointer; }
+  label.sub { padding-left: 24px; color: light-dark(#606060, #aaa); }
+  #list.off { opacity: .4; pointer-events: none; }
+  input { accent-color: #e11d48; margin: 0; }
+  /* iPhone/iPad sheet: fill the width and give every row a 44px tap target */
+  @media (pointer: coarse) {
+    body { width: auto; padding: 8px 20px 24px; font-size: 17px; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+    h1 { font-size: 20px; margin: 4px 0 8px; justify-content: flex-start; }
+    h1 span { display: none; } /* iOS already shows the extension name in the sheet header */
+    label { min-height: 44px; padding: 0; gap: 14px; border-bottom: 1px solid light-dark(#0000001a, #ffffff14); }
+    h1 label { border: 0; }
+    label.sub { padding-left: 36px; font-size: 16px; }
+    input { width: 22px; height: 22px; flex: none; }
+  }
+</style>
+</head>
+<body>
+  <h1><span>Clean YouTube</span> <label><input type="checkbox" id="enabled"> On</label></h1>
+  <div id="list"></div>
+  <script src="options.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
